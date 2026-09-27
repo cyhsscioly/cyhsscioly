@@ -228,6 +228,17 @@
     ]
   },
   {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "Stay up to date with everything happening in Central York Science Olympiad.",
+    "crumbs": [
+      "Team",
+      "News Feed"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Central York Science Olympiad",

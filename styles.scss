@@ -413,3 +413,39 @@ $footer-fg: #ffffff;
     min-height: 250px;
   }
 }
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto 4rem;
+  align-items: start;
+}
+
+.instagram-post {
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-post .instagram-media {
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 1000px) {
+  .instagram-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .instagram-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+  }
+}

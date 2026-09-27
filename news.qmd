@@ -1,0 +1,84 @@
+---
+title: "News"
+---
+
+Stay up to date with everything happening in Central York Science Olympiad.
+
+```{=html}
+<div class="instagram-grid">
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/DWmHniGllKN/?img_index=1"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/DTTvSFNkkrF/"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/DStn9Z3DD0v/"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/DJjfO6XO5Ch/?img_index=1"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/DHjPubOOyJw/?img_index=1"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/DEliVvruruR/"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/DDlDvSLOowO/?img_index=1"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/C1sUutVuZ9r/?img_index=1"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+  <div class="instagram-post">
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/p/C07zlm1O_Nh/?img_index=1"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
+
+</div>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+
+<script>
+  window.addEventListener("load", function () {
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+  });
+</script>
+```
