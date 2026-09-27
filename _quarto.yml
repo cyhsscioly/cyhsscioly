@@ -40,12 +40,10 @@ website:
             text: Schedule
           - href: stats.qmd
             text: Statistics
-      - section: "Logistics"
-        contents:
-          - href: contact.qmd
-            text: Contact Us
-          - href: sponsor.qmd
-            text: Support Us
+      - href: contact.qmd
+        text: Contact Us
+      - href: sponsor.qmd
+        text: Support Us
 
   page-footer:
     left: "© 2026 Central York Science Olympiad"

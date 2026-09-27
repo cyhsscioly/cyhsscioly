@@ -1,1 +1,1 @@
-Sitemap: https://coen-beamesderfer.github.io/cyhs-scioly/sitemap.xml
+Sitemap: https://cyhsscioly.github.io/cyhsscioly/sitemap.xml

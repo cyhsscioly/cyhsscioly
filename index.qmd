@@ -5,6 +5,8 @@ page-layout: full
 
 ::: {.hero-banner}
 # Central York Science Olympiad
+### Central York High School's award-winning STEM competition team​
+
 
 [Support Us](sponsor.qmd){.btn .btn-primary .btn-lg role="button"}
 [Contact Us](contact.qmd){.btn .btn-primary .btn-lg role="button"}
@@ -12,11 +14,186 @@ page-layout: full
 
 ## What We Do
 
-Description
+Each year, CYHS Science Olympiad brings two competing teams to invitationals across Pennsylvania and Maryland, typically attending six or more tournaments per season, with our top team advancing to the Central PA Regional Tournament and, when we qualify, the PA State Tournament. Competing across 23 events spanning science exams, laboratory work, and engineering builds, our 40+ students put months of practice to the test against some of the strongest teams in the state.
 
 ## Recent Highlights
 
-Palcements here with cool event logos
+### April 25, 2026 - Pennsylvania Science Olympiad State Tournament
+
+```{r}
+#| echo: false
+#| results: asis
+
+highlights <- data.frame(
+  event = c(
+    "Chemistry Lab",
+    "Experimental Design",
+    "Water Quality",
+    "Bungee Drop",
+    "Rocks and Minerals"
+  ),
+  place = c(1, 1, 3, 4, 6),
+  partners = c(
+    "Coen • Jason",
+    "Coen • Abby • Carolyn",
+    "Lily • Gabrielle",
+    "Ryan • Carolyn",
+    "Emeline • Ryan"
+  ),
+  logo = c(
+    "images/chemistry-lab.png",
+    "images/experimental-design.png",
+    "images/water-quality.png",
+    "images/bungee-drop.png",
+    "images/rocks-and-minerals.png"
+  ),
+  stringsAsFactors = FALSE
+)
+
+ordinal <- function(n) {
+  if (n %% 100 %in% 11:13) {
+    paste0(n, "th")
+  } else {
+    suffix <- switch(
+      as.character(n %% 10),
+      "1" = "st",
+      "2" = "nd",
+      "3" = "rd",
+      "th"
+    )
+    paste0(n, suffix)
+  }
+}
+
+cat('<div class="highlights-grid">')
+
+for (i in seq_len(nrow(highlights))) {
+
+  cat(
+    '<div class="highlight-card">',
+      '<div class="highlight-logo">',
+        '<img src="', highlights$logo[i],
+        '" alt="', highlights$event[i], ' logo">',
+      '</div>',
+
+      '<div class="highlight-event">',
+        highlights$event[i],
+      '</div>',
+
+      '<div class="highlight-place">',
+        ordinal(highlights$place[i]), ' Place',
+      '</div>',
+
+     #'<div class="highlight-partner">',
+     ##   '<span>', 
+     #   if (grepl("·", highlights$partner[i])) "s" else "",
+       # '</span> ',
+       # highlights$partner[i],
+     # '</div>',
+
+    '</div>',
+    sep = ""
+  )
+}
+
+cat('</div>')
+```
+
+### March 28, 2026 - Central Pennsylvania Regional Tournament
+
+```{r}
+#| echo: false
+#| results: asis
+
+highlights <- data.frame(
+  event = c(
+    "Chemistry Lab",
+    "Boomilever",
+    "Experimental Design",
+    "Rocks and Minerals",
+    "Bungee Drop",
+    "Dynamic Planet",
+    "Engineering CAD",
+    "Forensics",
+    "Helicopter",
+    "Water Quality",
+    "Circuit Lab",
+    "Entomology",
+    "Materials Science",
+    "Robot Tour",
+    "Designer Genes",
+    "Disease Detectives"
+  ),
+  place = c(2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5),
+  logo = c(
+    "images/Chemistry Lab.png",
+    "images/Boomilever.png",
+    "images/Experimental Design.png",
+    "images/Rocks and Minerals.png",
+    "images/Bungee Drop.png",
+    "images/Dynamic Planet - Oceanography.png",
+    "images/Engineering CAD.png",
+    "images/Forensics.png",
+    "images/Helicopter.png",
+    "images/Water Quality.png",
+    "images/Circuit Lab.png",
+    "images/Entomology.png",
+    "images/Materials Science - Nanomaterials.png",
+    "images/Robot Tour.png",
+    "images/Designer Genes.png",
+    "images/Disease Detectives.png"
+  ),
+  stringsAsFactors = FALSE
+)
+
+ordinal <- function(n) {
+  if (n %% 100 %in% 11:13) {
+    paste0(n, "th")
+  } else {
+    suffix <- switch(
+      as.character(n %% 10),
+      "1" = "st",
+      "2" = "nd",
+      "3" = "rd",
+      "th"
+    )
+    paste0(n, suffix)
+  }
+}
+
+cat('<div class="highlights-grid">')
+
+for (i in seq_len(nrow(highlights))) {
+
+  cat(
+    '<div class="highlight-card">',
+      '<div class="highlight-logo">',
+        '<img src="', highlights$logo[i],
+        '" alt="', highlights$event[i], ' logo">',
+      '</div>',
+
+      '<div class="highlight-event">',
+        highlights$event[i],
+      '</div>',
+
+      '<div class="highlight-place">',
+        ordinal(highlights$place[i]), ' Place',
+      '</div>',
+
+     # '<div class="highlight-partner">',
+     ##   '<span>', 
+     #   if (grepl("·", highlights$partner[i])) "s" else "",
+       # '</span> ',
+       # highlights$partner[i],
+     # '</div>',
+
+    '</div>',
+    sep = ""
+  )
+}
+
+cat('</div>')
+```
 
 See the [Schedule](schedule.qmd) page for and upcoming
 competitions, or visit [Support Us](sponsor.qmd) to support our team.

@@ -18,64 +18,98 @@ states.
 ![](images/coach-1.jpg){.team-photo}
 
 <div class="team-name">Matthew Hess</div>
-<div class="team-role">Head Coach</div>
+<div class="team-role">Coach</div>
 
-[mhess@iforget.com](mailto:coach1@email.org)
+[mhess@cysd.k12.pa.us](mailto:mhess@cysd.k12.pa.us)
 :::
 
 ::: {.g-col-12 .g-col-md-4 .team-card}
 ![](images/coach-2.jpg){.team-photo}
 
 <div class="team-name">Eric Musselman</div>
-<div class="team-role">Assistant Coach</div>
+<div class="team-role">Coach</div>
 
-[emusselman@iforget.com](mailto:emusselman@iforget.com)
+[emusselman@cysd.k12.pa.us](mailto:emusselman@cysd.k12.pa.us)
 :::
 
 :::
 
 ## Officers
 
-<!-- EDIT: real names -->
-| Role | Student |
-|---|---|
-| Idk | TBA |
-| Idk | TBA |
-| Schedule Coordinator | TBA |
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4 .team-card}
+![](images/abby-zayatz.jpg){.team-photo}
+
+<div class="team-name">Abigail Zayatz</div>
+
+:::
+
+::: {.g-col-12 .g-col-md-4 .team-card}
+![](images/prisha-patel.jpg){.team-photo}
+
+<div class="team-name">Prisha Patel</div>
+
+:::
+
+::: {.g-col-12 .g-col-md-4 .team-card}
+![](images/sarah-crowell.jpg){.team-photo}
+
+<div class="team-name">Sarah Crowell</div>
+
+:::
+
+:::
 
 ## Divisions
 
 Central York competes in **Division C** (grades 9–12) and **Division B** (grades 6-8).
 
-## Events We Compete In (Update later)
+## Events We Compete In
 
 ::: {.grid}
 ::: {.g-col-6}
 **Life, Personal & Social Science**
 
 - Anatomy & Physiology
+- Botany
 - Disease Detectives
 - Ecology
+- Water Quality
 :::
 ::: {.g-col-6}
 **Physical Science & Chemistry**
 
 - Chemistry Lab
+- Circuit Lab
 - Forensics
-- Materials Science
+- Hovercraft
+- Protein Modeling
+- Thermodynamics
 :::
 ::: {.g-col-6}
 **Earth & Space Science**
 
 - Astronomy
 - Dynamic Planet
-- Meteorology
+- Remote Sensing
+- Rocks and Minerals
 :::
 ::: {.g-col-6}
 **Technology & Engineering**
 
-- Engineering CAD
-- Robot Tour
-- Towers
+- Boomilever
+- Electric Vehicle
+- Mission Possible
+- Wright Stuff
 :::
+::: {.g-col-6}
+**Inquiry & Nature of Science**
+
+- Codebusters
+- Engineering CAD
+- Experimental Design
+- Ping Pong Parachute
+:::
+
 :::
