@@ -15,7 +15,7 @@ states.
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4 .team-card}
-![](images/coach-1.jpg){.team-photo}
+![](images/hess.jpeg){.team-photo}
 
 <div class="team-name">Matthew Hess</div>
 <div class="team-role">Coach</div>
@@ -24,7 +24,7 @@ states.
 :::
 
 ::: {.g-col-12 .g-col-md-4 .team-card}
-![](images/coach-2.jpg){.team-photo}
+![](images/musselman.jpeg){.team-photo}
 
 <div class="team-name">Eric Musselman</div>
 <div class="team-role">Coach</div>
@@ -39,21 +39,21 @@ states.
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4 .team-card}
-![](images/abby-zayatz.jpg){.team-photo}
+![](images/abby.jpeg){.team-photo}
 
 <div class="team-name">Abigail Zayatz</div>
 
 :::
 
 ::: {.g-col-12 .g-col-md-4 .team-card}
-![](images/prisha-patel.jpg){.team-photo}
+![](images/prisha.png){.team-photo}
 
 <div class="team-name">Prisha Patel</div>
 
 :::
 
 ::: {.g-col-12 .g-col-md-4 .team-card}
-![](images/sarah-crowell.jpg){.team-photo}
+![](images/sarah.jpeg){.team-photo}
 
 <div class="team-name">Sarah Crowell</div>
 
