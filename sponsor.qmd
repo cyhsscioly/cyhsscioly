@@ -1,0 +1,180 @@
+---
+title: "Support Us"
+page-layout: full
+---
+
+::: {.hero-banner}
+# Support Central York Science Olympiad
+### Invest in the next generation of scientists, engineers, and problem-solvers.
+
+Your support helps our students compete, experiment, build, and learn at the highest level.
+
+[Become a Sponsor](#become-a-sponsor){.btn .btn-primary .btn-lg}
+:::
+
+## Why Sponsor Us?
+
+Science Olympiad gives students the opportunity to take science beyond the classroom. Through hands-on experimentation, engineering, research, and competition, our team develops skills that last far beyond tournament day.
+
+Your sponsorship helps provide the materials, equipment, travel, and resources our students need throughout the season.
+
+### Your support helps fund
+
+- Laboratory supplies and chemicals
+- Engineering and construction materials
+- Scientific equipment and instrumentation
+- Tournament registration and competition expenses
+- Travel to competitions
+- Team merchandise and competition materials
+- Resources for practices and student preparation
+
+::: {.callout-important}
+## Every contribution makes a difference
+
+Whether you are a local business, organization, family, or individual, your support directly contributes to opportunities for Central York students.
+:::
+
+## Sponsorship Opportunities
+
+::: {.sponsor-tier}
+### 🐾 Panther Sponsor
+
+## $100+
+
+**Recognition**
+
+- Your name listed on our **Our Sponsors** webpage
+- Shoutout on our team social media
+:::
+
+::: {.sponsor-tier}
+### 🥉 Bronze Sponsor
+
+## $250+
+
+**Everything included with Panther, plus:**
+
+- Your organization's logo on our team competition banner
+- Banner displayed at competitions throughout the season
+:::
+
+::: {.sponsor-tier}
+### 🥈 Silver Sponsor
+
+## $500+
+
+**Everything included with Bronze, plus:**
+
+- Your organization's logo on team T-shirts
+- Shirts worn by team members at competitions throughout the season
+:::
+
+::: {.sponsor-tier}
+### 🥇 Gold Sponsor
+
+## $1,000+
+
+**Everything included with Silver, plus:**
+
+- Large logo placement on team shirts
+- Prominent logo placement on our competition banner
+- Logo placement on selected team competition builds and displays
+:::
+
+## Custom Sponsorships
+
+Looking for another way to support our team?
+
+We are happy to discuss **custom sponsorship packages** for businesses and organizations interested in supporting a specific project, event, competition, or area of the team.
+
+<a
+  href="mailto:Scioly@cypanthers.org?subject=Custom%20Sponsorship%20Package%20Inquiry&body=Hello%20Central%20York%20Science%20Olympiad%20Team%2C%0A%0AI%20am%20interested%20in%20discussing%20a%20custom%20sponsorship%20package%20for%20Central%20York%20Science%20Olympiad.%0A%0AOrganization%3A%0AContact%20Name%3A%0APhone%3A%0A%0APlease%20let%20me%20know%20what%20options%20are%20available.%0A%0AThank%20you%21"
+  class="btn btn-outline-primary"
+>
+Discuss a Custom Package
+</a>
+
+## Become a Sponsor {#become-a-sponsor}
+
+Interested in sponsoring Central York Science Olympiad?
+
+Contact us to arrange your sponsorship or discuss a custom package.
+
+**Email:** [scioly@cypanthers.org](mailto:Scioly@cypanthers.org)
+
+**Mail:**
+
+Central York High School  
+601 Mundis Mill Road  
+York, PA 17406
+
+**Checks payable to:** Central York High School  
+**Memo:** *In care of the Science Olympiad Team*
+
+::: {.callout-note}
+### Thank you for supporting our team!
+
+Your sponsorship helps Central York students pursue hands-on science, engineering, and competition opportunities throughout the year.
+:::
+
+## Our Sponsors
+
+We are proud to recognize the organizations supporting Central York Science Olympiad.
+
+::: {.sponsor-grid}
+
+::: {.sponsor-wrapper}
+<input type="checkbox" id="sponsor-csdavidson" class="sponsor-toggle">
+
+<label for="sponsor-csdavidson" class="sponsor-card">
+
+::: {.sponsor-card-inner}
+
+::: {.sponsor-card-front}
+
+![](images/cs-davidson.png){.sponsor-logo fig-alt="C.S. Davidson, Inc. logo"}
+
+:::
+
+::: {.sponsor-card-back}
+
+### C.S. Davidson, Inc.
+
+<span class="sponsor-card-tier">Bronze Sponsor</span>
+
+Thank you to C.S. Davidson, Inc. for supporting Central York Science Olympiad and our students.
+
+:::
+
+:::
+</label>
+:::
+
+::: {.sponsor-wrapper}
+<input type="checkbox" id="sponsor-janestreet" class="sponsor-toggle">
+
+<label for="sponsor-janestreet" class="sponsor-card">
+
+::: {.sponsor-card-inner}
+
+::: {.sponsor-card-front}
+
+![](images/jane-street.png){.sponsor-logo fig-alt="Jane Street logo"}
+
+:::
+
+::: {.sponsor-card-back}
+
+### Jane Street
+
+<span class="sponsor-card-tier">Bronze Sponsor</span>
+
+Thank you to Jane Street for supporting Central York Science Olympiad and our students.
+
+:::
+
+:::
+</label>
+:::
+
+:::

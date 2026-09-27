@@ -1,0 +1,163 @@
+---
+title: "Team Stats"
+---
+
+```{r}
+#| echo: false
+#| message: false
+library(dplyr)
+library(knitr)
+library(plotly)
+
+ordinal <- function(n) {
+  if (is.na(n)) return("—")
+  suffix <- if (n %% 100 %in% 11:13) "th" else
+    switch(as.character(n %% 10), "1" = "st", "2" = "nd", "3" = "rd", "th")
+  paste0(n, suffix)
+}
+
+stats_path <- "data/team-stats.csv"
+events_path <- "data/team-event-results.csv"
+have_data  <- file.exists(stats_path)
+stats  <- if (have_data) read.csv(stats_path) else data.frame()
+events <- if (file.exists(events_path)) read.csv(events_path) else data.frame()
+```
+
+::: {.callout-note}
+**About this data.** These numbers come from [Duosmium](https://www.duosmium.org/results/), a community-maintained, open-source archive of Science Olympiad results — not an official database. From this:
+
+- **Coverage is incomplete.** It only includes tournaments someone
+  chose to upload, so a season or an invitational can be missing
+  entirely.
+:::
+
+```{r}
+#| echo: false
+#| results: asis
+if (!have_data || nrow(stats) == 0) {
+  cat("_No data yet — run `Rscript R/update_duosmium_stats.R` to pull results from Duosmium._")
+}
+```
+
+::: {.grid}
+
+::: {.g-col-6 .g-col-md-3 .stat-card}
+```{r}
+#| echo: false
+#| results: asis
+best_reg <- if (have_data && any(stats$level == "Regionals", na.rm = TRUE)) {
+  min(stats$rank[stats$level == "Regionals"], na.rm = TRUE)
+} else NA
+cat("<div class='stat-number'>", ordinal(best_reg), "</div>")
+```
+<div class="stat-label">Best Regional Finish</div>
+:::
+
+::: {.g-col-6 .g-col-md-3 .stat-card}
+```{r}
+#| echo: false
+#| results: asis
+best_state <- if (have_data && any(stats$level == "States", na.rm = TRUE)) {
+  min(stats$rank[stats$level == "States"], na.rm = TRUE)
+} else NA
+cat("<div class='stat-number'>", ordinal(best_state), "</div>")
+```
+<div class="stat-label">Best State Finish</div>
+:::
+
+::: {.g-col-6 .g-col-md-3 .stat-card}
+```{r}
+#| echo: false
+#| results: asis
+total_medals <- if (have_data) sum(stats$event_medals, na.rm = TRUE) else 0
+cat("<div class='stat-number'>", total_medals, "</div>")
+```
+<div class="stat-label">Career Event Medals</div>
+:::
+
+::: {.g-col-6 .g-col-md-3 .stat-card}
+```{r}
+#| echo: false
+#| results: asis
+n_tournaments <- if (have_data) nrow(stats) else 0
+cat("<div class='stat-number'>", n_tournaments, "</div>")
+```
+<div class="stat-label">Tournaments on Record</div>
+:::
+
+:::
+
+## Our Best Events
+
+```{r}
+#| echo: false
+#| warning: false
+if (nrow(events) == 0) {
+  cat("Run the update script to populate this chart.")
+} else {
+  best_state_by_event <- events |>
+    filter(level == "States") |>
+    group_by(event) |>
+    summarise(best_state = min(place, na.rm = TRUE), .groups = "drop")
+
+  event_summary <- events |>
+    group_by(event) |>
+    summarise(
+      medals = sum(medal, na.rm = TRUE),
+      times  = n(),
+      .groups = "drop"
+    ) |>
+    left_join(best_state_by_event, by = "event") |>
+    mutate(
+      best_state_label = vapply(best_state, function(n) if (is.na(n)) "never at States" else ordinal(n), character(1)),
+      hover_text = paste0(
+        "<b>", event, "</b><br>",
+        "Medals: ", medals, "<br>",
+        "Best States: ", best_state_label, "<br>",
+        "Competed: ", times, "x"
+      )
+    ) |>
+    arrange(medals) |>
+    slice_tail(n = 15)
+
+  plot_ly(
+    event_summary,
+    x = ~medals,
+    y = ~factor(event, levels = event),
+    type = "bar",
+    orientation = "h",
+    marker = list(color = "#E8720C"),
+    text = ~hover_text,
+    hoverinfo = "text",
+    textposition = "none"
+  ) |>
+    layout(
+      xaxis = list(title = "Career medals", tick0 = 0, dtick = 1, rangemode = "tozero"),
+      yaxis = list(title = ""),
+      margin = list(l = 180)
+    ) |>
+    config(displayModeBar = FALSE)
+}
+```
+
+## Tournament History
+
+```{r}
+#| echo: false
+if (have_data && nrow(stats) > 0) {
+  stats |>
+    arrange(desc(year)) |>
+    transmute(
+      Year = year,
+      Tournament = tournament,
+      Level = level,
+      Div = division,
+      Rank = paste0(rank, " / ", n_teams),
+      Trophy = ifelse(trophy, "🏆", ""),
+      `Event Medals` = event_medals
+    ) |>
+    kable()
+} else {
+  cat("Run the update script to populate this table.")
+}
+```

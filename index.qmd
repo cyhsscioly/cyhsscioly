@@ -1,0 +1,22 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.hero-banner}
+# Central York Science Olympiad
+
+[Support Us](sponsor.qmd){.btn .btn-primary .btn-lg role="button"}
+[Contact Us](contact.qmd){.btn .btn-primary .btn-lg role="button"}
+:::
+
+## What We Do
+
+Description
+
+## Recent Highlights
+
+Palcements here with cool event logos
+
+See the [Schedule](schedule.qmd) page for and upcoming
+competitions, or visit [Support Us](sponsor.qmd) to support our team.

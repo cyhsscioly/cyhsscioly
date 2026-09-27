@@ -1,0 +1,81 @@
+---
+title: "About Us"
+---
+
+## Overview
+
+Science Olympiad is a national STEM competition where teams of up to
+15 students compete in ~23 events spanning biology, chemistry, physics,
+earth science, and engineering. Central York fields a team each year
+that competes at the regional level, with the goal of advancing to
+states.
+
+## Coaches
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4 .team-card}
+![](images/coach-1.jpg){.team-photo}
+
+<div class="team-name">Matthew Hess</div>
+<div class="team-role">Head Coach</div>
+
+[mhess@iforget.com](mailto:coach1@email.org)
+:::
+
+::: {.g-col-12 .g-col-md-4 .team-card}
+![](images/coach-2.jpg){.team-photo}
+
+<div class="team-name">Eric Musselman</div>
+<div class="team-role">Assistant Coach</div>
+
+[emusselman@iforget.com](mailto:emusselman@iforget.com)
+:::
+
+:::
+
+## Officers
+
+<!-- EDIT: real names -->
+| Role | Student |
+|---|---|
+| Idk | TBA |
+| Idk | TBA |
+| Schedule Coordinator | TBA |
+
+## Divisions
+
+Central York competes in **Division C** (grades 9–12) and **Division B** (grades 6-8).
+
+## Events We Compete In (Update later)
+
+::: {.grid}
+::: {.g-col-6}
+**Life, Personal & Social Science**
+
+- Anatomy & Physiology
+- Disease Detectives
+- Ecology
+:::
+::: {.g-col-6}
+**Physical Science & Chemistry**
+
+- Chemistry Lab
+- Forensics
+- Materials Science
+:::
+::: {.g-col-6}
+**Earth & Space Science**
+
+- Astronomy
+- Dynamic Planet
+- Meteorology
+:::
+::: {.g-col-6}
+**Technology & Engineering**
+
+- Engineering CAD
+- Robot Tour
+- Towers
+:::
+:::

@@ -1,0 +1,70 @@
+project:
+  type: website
+  output-dir: docs
+
+execute:
+  freeze: auto
+
+website:
+  title: "Central York Science Olympiad"
+  description: "Central York High School Science Olympiad"
+  site-url: "https://coen-beamesderfer.github.io/cyhs-scioly/"
+  favicon: images/CYHSso.png
+  page-navigation: true
+
+  sidebar:
+    background: "#1A1A1A"
+    logo: images/CYHSso.png
+    logo-alt: "Central York Science Olympiad logo"
+    pinned: true
+    align: center
+    tools:
+      - icon: instagram
+        href: https://www.instagram.com/cyhsscioly/
+      - icon: envelope-fill
+        href: mailto:scioly@cypanthers.org
+        text: "Email"
+    style: docked
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Team"
+        contents:
+          - href: index.qmd
+            text: Home
+          - href: about.qmd
+            text: About Us
+      - section: "Results"
+        contents:
+          - href: schedule.qmd
+            text: Schedule
+          - href: stats.qmd
+            text: Statistics
+      - section: "Logistics"
+        contents:
+          - href: contact.qmd
+            text: Contact Us
+          - href: sponsor.qmd
+            text: Support Us
+
+  page-footer:
+    left: "© 2026 Central York Science Olympiad"
+    center:
+     - |
+       <div class="footer-sponsors">
+          <span>Proudly supported by</span>
+          <a href="https://www.csdavidson.com/" aria-label="C.S. Davidson, Inc.">
+            <img src="images/cs-davidson.png" alt="C.S. Davidson, Inc.">
+         </a>
+         <a href="https://www.janestreet.com/" aria-label="Jane Street">
+           <img src="images/jane-street.png" alt="Jane Street">
+         </a>
+       </div>
+    right: "Built with [Quarto](https://quarto.org)"
+    background: "#1A1A1A"
+
+format:
+  html:
+    theme: [flatly, styles.scss]
+    toc: true
+    link-external-newwindow: true
