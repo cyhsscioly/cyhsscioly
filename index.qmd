@@ -41,11 +41,11 @@ highlights <- data.frame(
     "Emeline • Ryan"
   ),
   logo = c(
-    "images/chemistry-lab.png",
-    "images/experimental-design.png",
-    "images/water-quality.png",
-    "images/bungee-drop.png",
-    "images/rocks-and-minerals.png"
+    "images/Chemistry Lab.png",
+    "images/Experimental Design.png",
+    "images/Water Quality.png",
+    "images/Bungee Drop.png",
+    "images/Rocks and Minerals.png"
   ),
   stringsAsFactors = FALSE
 )
