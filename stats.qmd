@@ -24,7 +24,7 @@ events <- if (file.exists(events_path)) read.csv(events_path) else data.frame()
 ```
 
 ::: {.callout-note}
-**About this data.** These numbers come from [Duosmium](https://www.duosmium.org/results/), a community-maintained, open-source archive of Science Olympiad results — not an official database. From this:
+**About this data.** These numbers come from [Duosmium](https://www.duosmium.org/results/), a community-maintained, open-source archive of Science Olympiad results, not an official database. From this:
 
 - **Coverage is incomplete.** It only includes tournaments someone
   chose to upload, so a season or an invitational can be missing
