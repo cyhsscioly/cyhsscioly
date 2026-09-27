@@ -8,7 +8,7 @@ execute:
 website:
   title: "Central York Science Olympiad"
   description: "Central York High School Science Olympiad"
-  site-url: "https://coen-beamesderfer.github.io/cyhs-scioly/"
+  site-url: "https://cyhsscioly.github.io/cyhsscioly/"
   favicon: images/CYHSso.png
   page-navigation: true
 
