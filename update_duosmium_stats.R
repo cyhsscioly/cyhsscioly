@@ -51,9 +51,9 @@ invitational_patterns <- c(
   "birdso_satellite_invitational",
   "georgia_scrimmage",
   "berks_county_invitational",
-  "umbc_neighbors_division_invitational",
+  "umbc",
   "umd_invitational",
-  "bavf_invitational"
+  "bavf"
 )
 
 extra_files <- index[str_detect(
@@ -61,21 +61,51 @@ extra_files <- index[str_detect(
   paste0("(", paste(invitational_patterns, collapse = "|"), ").*_c\\.yaml$")
 )]
 
-candidate_files <- unique(c(pa_files, extra_files))
-message("Checking ", length(candidate_files), " tournament files...")
 
-get_team_result <- function(fname) {
-  yml <- tryCatch(
+candidate_files <- unique(c(pa_files, extra_files))
+message("Downloading ", length(candidate_files), " tournament files...")
+
+fetch_yml <- function(fname) {
+  tryCatch(
     yaml::read_yaml(paste0(BASE_RAW, "results/", fname)),
     error = function(e) NULL
   )
+}
+all_yml <- map(candidate_files, fetch_yml)
+names(all_yml) <- candidate_files
+
+tournament_key <- function(yml) {
+  yml$Tournament$`short name` %||% yml$Tournament$name %||%
+    paste(yml$Tournament$state, yml$Tournament$level)
+}
+
+mode_or_na <- function(x) {
+  x <- x[!is.na(x)]
+  if (length(x) == 0) return(NA_real_)
+  as.numeric(names(sort(table(x), decreasing = TRUE))[1])
+}
+
+cutoff_lookup <- tibble(
+  key      = map_chr(compact(all_yml), tournament_key),
+  medals   = map_dbl(compact(all_yml), \(y) as.numeric(y$Tournament$medals   %||% NA)),
+  trophies = map_dbl(compact(all_yml), \(y) as.numeric(y$Tournament$trophies %||% NA))
+) |>
+  group_by(key) |>
+  summarise(
+    medals_mode   = mode_or_na(medals),
+    trophies_mode = mode_or_na(trophies),
+    .groups = "drop"
+  )
+
+get_team_result <- function(fname, yml) {
   if (is.null(yml) || is.null(yml$Teams)) return(NULL)
 
   teams <- extract_teams(yml$Teams)
-  if (nrow(teams) == 0) return(NULL)  
-  our_team <- teams |> filter(school == SCHOOL_NAME)
-  if (nrow(our_team) == 0) return(NULL)  
-  team_num <- our_team$number[1]
+  if (nrow(teams) == 0) return(NULL) 
+  our_teams <- teams |> filter(school == SCHOOL_NAME)
+  if (nrow(our_teams) == 0) return(NULL)  
+  
+  team_nums <- our_teams$number
 
   events         <- extract_events(yml$Events)
   trial_events   <- events$name[events$trial]
@@ -84,7 +114,9 @@ get_team_result <- function(fname) {
 
   placings_raw <- extract_placings(yml$Placings) |>
     filter(event %in% scored_events)
-  if (nrow(placings_raw) == 0) return(NULL)
+  if (nrow(placings_raw) == 0) return(NULL) 
+  n_offset  <- as.numeric(yml$Tournament$`n offset`  %||% 0)
+  ns_offset <- as.numeric(yml$Tournament$`ns offset` %||% 1)
 
   grid <- expand.grid(
     team  = teams$number,
@@ -95,12 +127,12 @@ get_team_result <- function(fname) {
   scored <- grid |>
     left_join(placings_raw, by = c("team", "event")) |>
     left_join(
-      placings_raw |> filter(!is.na(place)) |> count(event, name = "n_scored"),
+      placings_raw |> count(event, name = "n_entries"),
       by = "event"
     ) |>
     mutate(
-      n_scored     = coalesce(n_scored, 0L),
-      scored_place = ifelse(is.na(place), n_scored + 1, place)
+      n_entries    = coalesce(n_entries, 0L),
+      scored_place = ifelse(is.na(place), n_entries + n_offset + ns_offset, place)
     )
 
   totals <- scored |>
@@ -109,28 +141,47 @@ get_team_result <- function(fname) {
     arrange(points) |>
     mutate(rank = row_number())
 
-  our_rank    <- totals$rank[totals$team == team_num][1]
-  medal_cut   <- yml$Tournament$medals   %||% 0
-  trophy_cut  <- yml$Tournament$trophies %||% 0
-  tournament  <- yml$Tournament$`short name` %||% yml$Tournament$name %||%
-    paste(yml$Tournament$state, yml$Tournament$level)
+  our_ranks <- totals$rank[totals$team %in% team_nums]
+  our_rank  <- if (length(our_ranks) > 0) min(our_ranks) else NA_integer_
+  tournament <- tournament_key(yml)
   level <- yml$Tournament$level
   year  <- yml$Tournament$year
 
-  our_placings <- placings_raw |> filter(team == team_num, !is.na(place))
+  own_medals   <- as.numeric(yml$Tournament$medals   %||% NA)
+  own_trophies <- as.numeric(yml$Tournament$trophies %||% NA)
+  lookup_row   <- cutoff_lookup |> filter(key == tournament)
+  medals_imputed <- is.na(own_medals) && nrow(lookup_row) > 0 && !is.na(lookup_row$medals_mode[1])
+
+  medal_cut  <- if (!is.na(own_medals)) {
+    own_medals
+  } else if (nrow(lookup_row) > 0 && !is.na(lookup_row$medals_mode[1])) {
+    lookup_row$medals_mode[1]
+  } else {
+    0
+  }
+  trophy_cut <- if (!is.na(own_trophies)) {
+    own_trophies
+  } else if (nrow(lookup_row) > 0 && !is.na(lookup_row$trophies_mode[1])) {
+    lookup_row$trophies_mode[1]
+  } else {
+    0
+  }
+
+  our_placings <- placings_raw |> filter(team %in% team_nums, !is.na(place))
 
   summary_row <- tibble(
-    file         = fname,
-    tournament   = tournament,
-    level        = level,
-    year         = year,
-    division     = yml$Tournament$division,
-    rank         = our_rank,
-    n_teams      = nrow(totals),
-    trophy_cut   = trophy_cut,
-    trophy       = !is.na(our_rank) && our_rank <= trophy_cut,
-    event_medals = sum(our_placings$place >= 1 & our_placings$place <= medal_cut,
-                        na.rm = TRUE)
+    file           = fname,
+    tournament     = tournament,
+    level          = level,
+    year           = year,
+    division       = yml$Tournament$division,
+    rank           = our_rank,
+    n_teams        = nrow(totals),
+    trophy_cut     = trophy_cut,
+    trophy         = !is.na(our_rank) && our_rank <= trophy_cut,
+    event_medals   = sum(our_placings$place >= 1 & our_placings$place <= medal_cut,
+                          na.rm = TRUE),
+    medals_imputed = medals_imputed
   )
 
   event_rows <- our_placings |>
@@ -140,13 +191,14 @@ get_team_result <- function(fname) {
       year       = year,
       event      = event,
       place      = place,
-      medal      = !is.na(place) & place >= 1 & place <= medal_cut
+      medal      = !is.na(place) & place >= 1 & place <= medal_cut,
+      medal_cut_imputed = medals_imputed
     )
 
   list(summary = summary_row, events = event_rows)
 }
 
-raw_results <- map(candidate_files, get_team_result) |> compact()
+raw_results <- map2(names(all_yml), all_yml, get_team_result) |> compact()
 
 results <- map(raw_results, "summary") |> bind_rows() |> arrange(year)
 event_results <- map(raw_results, "events") |> bind_rows() |> arrange(year)

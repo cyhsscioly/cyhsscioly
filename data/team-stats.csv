@@ -1,53 +1,53 @@
-"file","tournament","level","year","division","rank","n_teams","trophy","event_medals","corrected","note"
-"2011-02-12_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2011,"C",22,29,FALSE,1,FALSE,NA
-"2011-01-08_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2011,"C",33,36,FALSE,0,FALSE,NA
-"2012-04-27_PA_states_c.yaml","PA States","States",2012,"C",25,36,FALSE,0,FALSE,NA
-"2012-02-11_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2012,"C",25,30,FALSE,0,FALSE,NA
-"2012-01-14_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2012,"C",27,36,FALSE,1,FALSE,NA
-"2013-04-26_PA_states_c.yaml","PA States","States",2013,"C",17,36,FALSE,1,FALSE,NA
-"2013-01-12_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2013,"C",24,37,FALSE,0,FALSE,NA
-"2014-01-01_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2014,"C",37,39,FALSE,0,FALSE,NA
-"2014-02-08_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2014,"C",33,36,FALSE,0,FALSE,NA
-"2015-04-25_PA_states_c.yaml","PA States","States",2015,"C",23,36,FALSE,2,FALSE,NA
-"2015-01-10_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2015,"C",31,39,FALSE,0,FALSE,NA
-"2015-02-14_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2015,"C",25,36,FALSE,0,FALSE,NA
-"2016-04-23_PA_states_c.yaml","PA States","States",2016,"C",15,36,FALSE,3,FALSE,NA
-"2016-02-13_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2016,"C",21,39,FALSE,4,FALSE,NA
-"2017-04-29_PA_states_c.yaml","PA States","States",2017,"C",16,36,FALSE,2,FALSE,NA
-"2017-01-01_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2017,"C",26,40,FALSE,0,FALSE,NA
-"2017-02-11_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2017,"C",18,36,FALSE,2,FALSE,NA
-"2018-04-18_PA_states_c.yaml","PA States","States",2018,"C",22,35,FALSE,1,FALSE,NA
-"2018-02-10_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2018,"C",6,28,FALSE,3,FALSE,NA
-"2018-01-13_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2018,"C",22,45,FALSE,0,FALSE,NA
-"2019-03-02_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2019,"C",7,31,FALSE,2,FALSE,NA
-"2019-02-09_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2019,"C",16,30,FALSE,2,FALSE,NA
-"2019-01-12_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2019,"C",20,44,FALSE,1,FALSE,NA
-"2020-02-29_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2020,"C",5,33,FALSE,6,FALSE,NA
-"2020-02-08_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2020,"C",25,29,FALSE,1,FALSE,NA
-"2020-02-01_barons_invitational_c.yaml","Barons Invitational","Invitational",2020,"C",18,28,FALSE,1,FALSE,NA
-"2020-01-11_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2020,"C",40,45,FALSE,1,FALSE,NA
-"2022-04-30_PA_states_c.yaml","PA States","States",2022,"C",17,36,FALSE,2,FALSE,NA
-"2022-03-26_PA_central_north_pa_regional_c.yaml","Central North PA Regional","Regionals",2022,"C",7,24,FALSE,0,FALSE,NA
-"2022-02-19_pitt_invitational_c.yaml","Pitt Invitational","Invitational",2022,"C",7,22,FALSE,0,FALSE,NA
-"2021-12-11_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2022,"C",41,73,FALSE,0,FALSE,NA
-"2023-03-25_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2023,"C",7,23,FALSE,0,FALSE,NA
-"2022-12-17_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2023,"C",33,41,FALSE,0,FALSE,NA
-"2023-02-11_birdso_satellite_invitational_c.yaml","BirdSO Satellite","Invitational",2023,"C",169,227,FALSE,0,FALSE,NA
-"2022-12-03_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2023,"C",47,76,FALSE,0,FALSE,NA
-"2024-03-23_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2024,"C",7,26,FALSE,4,FALSE,NA
-"2024-02-10_birdso_satellite_invitational_c.yaml","BirdSO Satellite","Invitational",2024,"C",130,166,FALSE,0,FALSE,NA
-"2023-11-27_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2024,"C",53,73,FALSE,0,FALSE,NA
-"2023-12-16_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2024,"C",20,48,FALSE,1,FALSE,NA
-"2025-04-26_PA_states_c.yaml","PA States","States",2025,"C",23,35,FALSE,3,FALSE,NA
-"2025-03-22_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2025,"C",5,22,FALSE,8,FALSE,NA
-"2025-01-18_umbc_neighbors_division_invitational_c.yaml","UMBC Neighbors Division Invitational","Invitational",2025,"C",7,15,FALSE,3,FALSE,NA
-"2024-12-02_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2025,"C",39,91,FALSE,0,FALSE,NA
-"2024-12-14_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2025,"C",38,46,FALSE,1,FALSE,NA
-"2026-04-25_PA_states_c.yaml","PA States","States",2026,"C",15,36,FALSE,5,FALSE,NA
-"2026-03-28_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2026,"C",3,24,TRUE,16,FALSE,NA
-"2026-02-14_umd_invitational_c.yaml","UMD Invitational","Invitational",2026,"C",35,40,FALSE,1,FALSE,NA
-"2026-01-17_umbc_neighbors_division_invitational_c.yaml","UMBC Neighbors Division Invitational","Invitational",2026,"C",2,22,TRUE,11,FALSE,NA
-"2026-01-08_berks_county_invitational_c.yaml","Berks County Invitational","Invitational",2026,"C",4,30,FALSE,10,FALSE,NA
-"2025-12-01_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2026,"C",30,92,FALSE,3,FALSE,NA
-"2025-12-20_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2026,"C",30,48,FALSE,1,FALSE,NA
-"2025-10-11_georgia_scrimmage_c.yaml","Georgia Scrimmage","Invitational",2026,"C",138,231,FALSE,0,FALSE,NA
+"file","tournament","level","year","division","rank","n_teams","trophy","event_medals","medals_imputed","corrected","note"
+"2011-02-12_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2011,"C",22,29,FALSE,1,FALSE,FALSE,NA
+"2011-01-08_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2011,"C",31,36,FALSE,0,FALSE,FALSE,NA
+"2012-04-27_PA_states_c.yaml","PA States","States",2012,"C",25,36,FALSE,0,FALSE,FALSE,NA
+"2012-02-11_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2012,"C",24,30,FALSE,1,TRUE,FALSE,NA
+"2012-01-14_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2012,"C",26,36,FALSE,1,FALSE,FALSE,NA
+"2013-04-26_PA_states_c.yaml","PA States","States",2013,"C",17,36,FALSE,1,FALSE,FALSE,NA
+"2013-01-12_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2013,"C",23,37,FALSE,0,FALSE,FALSE,NA
+"2014-01-01_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2014,"C",36,39,FALSE,0,TRUE,FALSE,NA
+"2014-02-08_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2014,"C",32,36,FALSE,0,TRUE,FALSE,NA
+"2015-04-25_PA_states_c.yaml","PA States","States",2015,"C",23,36,FALSE,2,FALSE,FALSE,NA
+"2015-01-10_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2015,"C",31,39,FALSE,1,TRUE,FALSE,NA
+"2015-02-14_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2015,"C",25,36,FALSE,0,TRUE,FALSE,NA
+"2016-04-23_PA_states_c.yaml","PA States","States",2016,"C",15,36,FALSE,3,FALSE,FALSE,NA
+"2016-02-13_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2016,"C",21,39,FALSE,5,FALSE,FALSE,NA
+"2017-04-29_PA_states_c.yaml","PA States","States",2017,"C",16,36,FALSE,2,FALSE,FALSE,NA
+"2017-01-01_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2017,"C",26,40,FALSE,1,TRUE,FALSE,NA
+"2017-02-11_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2017,"C",18,36,FALSE,3,FALSE,FALSE,NA
+"2018-04-18_PA_states_c.yaml","PA States","States",2018,"C",22,35,FALSE,1,FALSE,FALSE,NA
+"2018-02-10_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2018,"C",6,28,FALSE,4,FALSE,FALSE,NA
+"2018-01-13_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2018,"C",23,45,FALSE,0,TRUE,FALSE,NA
+"2019-03-02_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2019,"C",7,31,FALSE,2,FALSE,FALSE,NA
+"2019-02-09_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2019,"C",15,30,FALSE,2,FALSE,FALSE,NA
+"2019-01-12_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2019,"C",18,44,FALSE,1,FALSE,FALSE,NA
+"2020-02-29_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2020,"C",5,33,FALSE,6,FALSE,FALSE,NA
+"2020-02-08_tiger_invitational_c.yaml","Tiger Invitational","Invitational",2020,"C",16,29,FALSE,2,FALSE,FALSE,NA
+"2020-02-01_barons_invitational_c.yaml","Barons Invitational","Invitational",2020,"C",11,28,FALSE,3,FALSE,FALSE,NA
+"2020-01-11_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2020,"C",31,45,FALSE,1,FALSE,FALSE,NA
+"2022-04-30_PA_states_c.yaml","PA States","States",2022,"C",17,36,FALSE,2,FALSE,FALSE,NA
+"2022-03-26_PA_central_north_pa_regional_c.yaml","Central North PA Regional","Regionals",2022,"C",7,24,FALSE,0,FALSE,FALSE,NA
+"2022-02-19_pitt_invitational_c.yaml","Pitt Invitational","Invitational",2022,"C",4,22,FALSE,0,FALSE,FALSE,NA
+"2021-12-11_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2022,"C",42,73,FALSE,0,FALSE,FALSE,NA
+"2023-03-25_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2023,"C",7,23,FALSE,5,TRUE,FALSE,NA
+"2022-12-17_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2023,"C",33,41,FALSE,0,FALSE,FALSE,NA
+"2023-02-11_birdso_satellite_invitational_c.yaml","BirdSO Satellite","Invitational",2023,"C",136,227,FALSE,0,FALSE,FALSE,NA
+"2022-12-03_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2023,"C",43,76,FALSE,0,FALSE,FALSE,NA
+"2024-03-23_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2024,"C",7,26,FALSE,4,FALSE,FALSE,NA
+"2024-02-10_birdso_satellite_invitational_c.yaml","BirdSO Satellite","Invitational",2024,"C",94,166,FALSE,0,FALSE,FALSE,NA
+"2023-11-27_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2024,"C",38,73,FALSE,0,FALSE,FALSE,NA
+"2023-12-16_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2024,"C",20,48,FALSE,1,FALSE,FALSE,NA
+"2025-04-26_PA_states_c.yaml","PA States","States",2025,"C",23,35,FALSE,3,FALSE,FALSE,NA
+"2025-03-22_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2025,"C",5,22,FALSE,8,FALSE,FALSE,NA
+"2025-01-18_umbc_neighbors_division_invitational_c.yaml","UMBC Neighbors Division Invitational","Invitational",2025,"C",2,15,TRUE,5,FALSE,FALSE,NA
+"2024-12-02_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2025,"C",32,91,FALSE,0,FALSE,FALSE,NA
+"2024-12-14_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2025,"C",38,46,FALSE,1,FALSE,FALSE,NA
+"2026-04-25_PA_states_c.yaml","PA States","States",2026,"C",15,36,FALSE,5,FALSE,FALSE,NA
+"2026-03-28_PA_central_pa_regional_c.yaml","Central PA Regional","Regionals",2026,"C",3,24,TRUE,16,FALSE,FALSE,NA
+"2026-02-14_umd_invitational_c.yaml","UMD Invitational","Invitational",2026,"C",8,40,FALSE,3,FALSE,FALSE,NA
+"2026-01-17_umbc_neighbors_division_invitational_c.yaml","UMBC Neighbors Division Invitational","Invitational",2026,"C",3,22,TRUE,14,FALSE,FALSE,NA
+"2026-01-08_berks_county_invitational_c.yaml","Berks County Invitational","Invitational",2026,"C",3,30,TRUE,19,FALSE,FALSE,NA
+"2025-12-01_dick_smith_memorial_invitational_c.yaml","Dick Smith Memorial Invitational","Invitational",2026,"C",29,92,FALSE,4,FALSE,FALSE,NA
+"2025-12-20_bavf_invitational_c.yaml","BAVF Invitational","Invitational",2026,"C",30,48,FALSE,1,FALSE,FALSE,NA
+"2025-10-11_georgia_scrimmage_c.yaml","Georgia Scrimmage","Invitational",2026,"C",121,231,FALSE,0,FALSE,FALSE,NA

@@ -61,7 +61,7 @@ website:
          </a>
        </div>
     right: "Built with [Quarto](https://quarto.org)"
-    background: "#1A1A1A"
+    background: "#f1f1f1"
 
 format:
   html:
