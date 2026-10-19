@@ -124,6 +124,33 @@ We are proud to recognize the organizations supporting Central York Science Olym
 ::: {.sponsor-grid}
 
 ::: {.sponsor-wrapper}
+<input type="checkbox" id="sponsor-morehouse" class="sponsor-toggle">
+
+<label for="sponsor-morehouse" class="sponsor-card">
+
+::: {.sponsor-card-inner}
+
+::: {.sponsor-card-front}
+
+![](images/Morehouse.png){.sponsor-logo fig-alt="Morehouse Instrument Company"}
+
+:::
+
+::: {.sponsor-card-back}
+
+### Morehouse Instrument Company
+
+<span class="sponsor-card-tier">Silver Sponsor</span>
+
+Thank you to Morehouse Instrument Company for supporting Central York Science Olympiad and our students.
+
+:::
+
+:::
+</label>
+:::
+
+::: {.sponsor-wrapper}
 <input type="checkbox" id="sponsor-csdavidson" class="sponsor-toggle">
 
 <label for="sponsor-csdavidson" class="sponsor-card">
