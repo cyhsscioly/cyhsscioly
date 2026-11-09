@@ -84,13 +84,8 @@ for (i in seq_len(nrow(highlights))) {
         ordinal(highlights$place[i]), ' Place',
       '</div>',
 
-     #'<div class="highlight-partner">',
+     # '<div class="highlight-partner">',
      ##   '<span>', 
-     #   if (grepl("·", highlights$partner[i])) "s" else "",
-       # '</span> ',
-       # highlights$partner[i],
-     # '</div>',
-
     '</div>',
     sep = ""
   )

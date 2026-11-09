@@ -1,0 +1,15 @@
+{
+  "hash": "b739632d10ad8bb6a82ba5a0360e6285",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Pressure vs. Time\"\noutput:\n  pdf_document:\n    latex_engine: xelatex\nmainfont: \"Palatino\"\n---\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\\begin{table}\n\n\\caption{\\label{tab:pressure-table}Pressure as a function of time.}\n\\centering\n\\begin{tabular}[t]{rr}\n\\toprule\nTime (min) & P (mmHg)\\\\\n\\midrule\n0 & 900.0\\\\\n25 & 810.5\\\\\n50 & 752.1\\\\\n75 & 713.6\\\\\n\\bottomrule\n\\end{tabular}\n\\end{table}\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
